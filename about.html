@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fotolab</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="ka/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="ka/css/style.css" rel="stylesheet">
+    </head>
+
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-dark position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-dark" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block bg-dark">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-white me-2"></i>Find A Location</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-white me-2"></i>+01234567890</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-white me-2"></i>Example@gmail.com</a>
+                            </div>
+
+                        </div>
+                        
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb py-5">
+            <div class="container text-center py-5 bg-dark">
+                <h3 class="text-white display-3 mb-4">About Us</h1>
+                    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        
+        <!-- About Start -->
+        <div class="container-fluid about py-5 bg-dark">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="video">
+                            <img src="ka/img/pexels-fonok-403495.jpg" class="img-fluid rounded" alt="">
+                            <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                                <img src="" class="img-fluid rounded" alt="">
+                            </div>
+                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div>
+                            <p class="fs-4 text-uppercase text-danger ">About Us</p>
+                            <h1 class="display-6 mb-4">Photography preserving memories & telling stories</h1>
+                            <p class="mb-4 text-white">Photography is the art, application, and practice of creating images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fab fa-gitkraken fa-3x text-white"></i>
+                                        <div class="ms-4">
+                                            <h5 class="mb-2">Discounted Sessions:</h5>
+                                            <p class="mb-0 text-white">Offer a limited-time discount on photo sessions, such as 10% off all bookings made within the next two weeks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-gift fa-3x text-white"></i>
+                                        <div class="ms-4">
+                                            <h5 class="mb-2">Bundle Deals:</h5>
+                                            <p class="mb-0 text-white">Package multiple services together at a discounted rate, like a photo session and print package.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="my-4 text-white">My general advice for photographers always is: write using a simple, clear voice – your voice.
+                            </p>
+                            <p class="mb-4 text-white">Photography is the process of recording an image – a photograph – on lightsensitive film or, in the case of digital photography, via a digital electronic or magnetic memory. 
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-dark btn-secondary-outline-0 rounded-pill py-3 px-5">Explore More</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <h4 class="mb-4 text-white">Newsletter</h4>
+                    <p class="text-white">Photography is the process of recording an image – a photograph – on lightsensitive film or, in the case of digital photography, via a digital electronic or magnetic memory.</p>
+                    <div class="position-relative mx-auto rounded-pill">
+                        <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                        <button type="button" class="btn btn-dark btn-dark-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Our Services</h4>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Wedding</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Birthday</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Party</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Family</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Engagement</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Bridal shower</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> New Born</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Schedule</h4>
+                    <p class="text-muted mb-0">Mon to fri: <span class="text-white"> 09:00 am – 10:00 pm</span></p>
+                    <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 08:00 pm</span></p>
+                    <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00 am – 05:00 pm</span></p>
+                    <h4 class="my-4 text-white">Address</h4>
+                    <p class="mb-0"><i class="fas fa-map-marker-alt text-dark me-2"></i> 123 ranking street North tower New York, USA</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Follow Us</h4>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                    <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                    <h4 class="my-4 text-white">Contact Us</h4>
+                    <p class="mb-0"><i class="fas fa-envelope text-dark me-2"></i> info@example.com</p>
+                    <p class="mb-0"><i class="fas fa-phone text-dark me-2"></i> (+012) 3456 7890 123</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-md-0">
+                <span class="text-warning"><a href="#"><i class="fas fa-copyright text-warning me-2"></i><a class="border-bottom text-danger">FOTOLAB</a></a>, All right reserved.</span>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center">
+                    <a href="" class="btn btn-warning btn-dark-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="btn btn-warning btn-dark-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="btn btn-warning btn-dark-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="btn btn-warning btn-dark-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center text-md-end text-warning">
+                <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                Designed By <a class="border-bottom text-danger" href="https://htmlcodex.com">SWMK</a> Distributed By <a class="border-bottom text-danger" href="https://themewagon.com">PHOTOGRAPHY</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-dark btn-dark-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

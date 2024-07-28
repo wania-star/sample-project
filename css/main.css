@@ -1,0 +1,719 @@
+/*
+Theme Name: LifeStyle Magazine
+Theme URI: https://templatesjungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: LifeStyle Magazine is specially designed product packaged for Life Style bloggers.
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+/** 1. Base Styles
+--------------------------------------------------------------*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Futura", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+section {
+  position: relative;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+ul li,
+ol li {
+  margin-bottom: 5px;
+  outline: 0;
+}
+
+ul li.active a {
+  color: #daa556;
+}
+
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+dt,
+dd {
+  line-height: 1.42857143;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: inline-block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1c3b9;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1c3b9;
+  text-shadow: none;
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+  /* WebKit browsers */
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+::-moz-placeholder {
+  color: #000;
+  /* Mozilla Firefox 19+ */
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+:-ms-input-placeholder {
+  color: #000;
+  /* Internet Explorer 10+ */
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+::placeholder {
+  color: #000;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+/* - Floating & Alignment
+------------------------------------------------------------- */
+.align-left {
+  float: left;
+  text-align: left;
+}
+
+.align-right {
+  float: right;
+  text-align: right;
+}
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+/** 3. Typography
+--------------------------------------------------------------*/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: 'Playfair Display';
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 25px;
+}
+
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.4;
+}
+
+h2,
+.h2 {
+  font-family: 'Futura', Roboto, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+h3,
+.h3 {
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+h4,
+.h4 {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+h5,
+.h5 {
+  font-size: .83em;
+  line-height: 1.25;
+}
+
+h6,
+.h6 {
+  font-size: .67em;
+  line-height: 1.1;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 75%;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+fieldset,
+blockquote,
+address,
+pre {}
+
+p:empty {
+  display: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+mark {
+  background-color: #fcf8e3;
+  padding: 0.28rem;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+code,
+kbd,
+var {
+  font-size: 14px;
+}
+
+code {
+  background-color: #f9f2f4;
+}
+
+abbr {
+  border-bottom: 0.1px dotted #666;
+  cursor: help;
+}
+
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/* - Button
+------------------------------------------------------------- */
+.btn-wrap {
+  padding-top: 35px;
+}
+
+.btn-wrap a {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 40px;
+}
+
+.btn-accent {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background-color: #e9663c;
+}
+
+.btn-orange {
+  background-color: #e9663c;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #c56a4d;
+  color: #fff;
+}
+
+.btn-submit {
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding: 1.6em 0;
+}
+
+.btn-pill {
+  border-radius: 50px;
+}
+
+
+/*--- Image Hover Effects
+-----------------------------------------------*/
+.grid figure {
+  overflow: hidden;
+  background: #111;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+figure.effect-zoom-out img {
+  opacity: 1;
+  -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+  transition: opacity 0.45s, transform 0.45s;
+  -webkit-transform: translate3d(-15px, 0, 0) scale(1.12);
+  transform: translate3d(-15px, 0, 0) scale(1.12);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-zoom-out:hover img {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.text-hvr-effect .grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+figure.effect-zoom-out figcaption>.title {
+  position: absolute;
+  padding: 1em 1.2em;
+  left: 28px;
+  right: 0;
+  bottom: 0;
+}
+
+figure.effect-zoom-out p {
+  width: 80%;
+  border-left: 3px solid #fff;
+  opacity: 0;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+  font-size: 1.2em;
+  padding-left: 10px;
+  margin: 100px 55px;
+}
+
+figure.effect-zoom-out:hover p {
+  opacity: 1;
+}
+
+/*--- Section Title
+-----------------------------------------------*/
+.section-title {
+  font-size: 3em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #111;
+}
+
+h3.section-title {
+  font-size: 3em;
+}
+
+/*--- Layer Text
+-----------------------------------------------*/
+.layer-vertical-text {
+  font-size: 14em;
+  font-weight: 900;
+  color: #eff1f3;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: -130px;
+}
+
+.layer-vertical-text.colored {
+  color: #f35656;
+}
+
+.layer-vertical-text.left-align {
+  top: 0;
+  left: 20px;
+}
+
+/*----- Grid Layout
+--------------------------------------------------------------*/
+.container {
+  max-width: 1399px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/*----- Header
+--------------------------------------------------------------*/
+#entire-wrapper {
+  padding: 0 10px;
+}
+
+header#header {
+  padding: 60px 0;
+}
+
+#header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#header .header-wrap .top-left {
+  display: flex;
+}
+
+/*----- Header Social links
+--------------------------------------------------------------*/
+.header-wrap .social-links {
+  margin-left: 37px;
+  color: white;
+}
+
+.social-links ul {
+  display: flex;
+}
+
+.social-links a {
+  padding-right: 12px;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #f45330;
+}
+
+@media (max-width: 1200px) {
+  .header-wrap .social-links {
+    display: none;
+  }
+}
+
+/*----- Header Menu
+--------------------------------------------------------------*/
+.header-nav .header-menu ul {
+  display: flex;
+}
+
+.header-nav .header-menu a.nav-link {
+  font-weight: 700;
+  
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.header-nav .header-menu a.icon-nav {
+  display: none;
+}
+
+.header-menu .hamburger {
+  display: none;
+}
+
+.header-menu .hamburger .bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media (max-width: 1200px) {
+  .header-nav .header-menu a.nav-link {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .header-menu .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 5;
+    padding-top: 10em;
+  }
+
+  .header-menu .nav-menu li.nav-item {
+    margin-bottom: 50px;
+  }
+
+  .header-menu .nav-menu a.nav-link {
+    font-size: 2.5em;
+  }
+
+  .header-menu .nav-menu.active {
+    left: 0;
+  }
+
+  .header-menu .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 9;
+    position: absolute;
+    right: 40px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/*----- Hover Effect Menu
+--------------------------------------------------------------*/
+.nav-hvr-effect * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.nav-hvr-effect li {
+  overflow: hidden;
+}
+
+.nav-hvr-effect a {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-hvr-effect a:before,
+.nav-hvr-effect a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.nav-hvr-effect a:after {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: #dc4b4b;
+  white-space: nowrap;
+}
+
+.nav-hvr-effect li:hover a,
+.nav-hvr-effect .current a {
+  transform: translateY(100%);
+}
+
+
+/*----- Footer Part
+--------------------------------------------------------------*/
+
+
+.instagram_profile {}
+
+.instagram_profile_image {}
+
+.instagram_username {}
+
+.instagram_biography {}
+
+.instagram_gallery {}
+
+
+/*----- Footer Part
+--------------------------------------------------------------*/
+#footer {
+  background: #000;
+  padding: 185px 0;
+  color: #adadad;
+}
+
+#footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+#footer a {
+  color: #adadad;
+  text-transform: uppercase;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+.footer-menu .social-links a {
+  font-size: 30px;
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  #footer .footer-content {
+    flex-wrap: wrap;
+  }
+
+  .footer-content .footer-menu {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 50px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content .footer-menu {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
